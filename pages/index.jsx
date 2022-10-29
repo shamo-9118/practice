@@ -1,9 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Footer from "../components/Footer";
-import Main from "../components/Main";
+import { Footer } from "../components/Footer";
+import { Main } from "../components/Main";
 
-export default function Home() {
+//積極的にuseCollbackとuseMemoを使っていこう。
+//アロー関数に書き換える
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,4 +17,5 @@ export default function Home() {
       <Footer></Footer>
     </div>
   );
-}
+};
+export default Home;
